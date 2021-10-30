@@ -1,1 +1,43 @@
-<img src="user/images/dog.jpg" w="100%" h="100%" alt="you do not recognize the bodies in the water">  </img>
+<SCRIPT LANGUAGE="Javascript">
+			function pick_image() {
+				var result           = 'user/images/';
+				var random			 = Math.floor((Math.random() * 32) + 1);
+				var picked			 = '.gif';
+				for ( var i = 0; i < 1; i++ ) {
+					result += random;
+					result += picked;
+				}
+				return result;
+				}
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function showImage(){
+
+document.write('<img src="'+pick_image()+'">');
+}
+
+//  End -->
+</script>
+
+</HEAD>
+<style>
+img{
+  display:block;
+  width:50%; height:50%;
+  object-fit: fill;
+}
+</style>
+<!-- STEP TWO: Copy this code into the BODY of your HTML document  -->
+
+<BODY>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+
+<!-- Begin
+showImage();
+//  End -->
+</script>
