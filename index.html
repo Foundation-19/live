@@ -496,9 +496,22 @@ function onYouTubeIframeAPIReady() {
 		</div>
 	<div class="overlay"></div>
 	<div class="scanline"></div>
+	<div class="credits" style="display:none" >
+	modified version of https://github.com/GreatCorn/scom
+	</div>
 	<div class="wrapper">	
+
 	<iframe id="bgsound" name="a" style="display:none;" width="0" height="0" src="https://www.youtube.com/embed/J14gqBgPbkI?autoplay=1" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</body>
+<script>
+window.addEventListener("load", function(){
+	var hash = '#'
+    while(!window.location.hash) {
+        window.location = window.location += hash;
+        window.location.reload();
+    }
+})
+</script>
 <script>
 var seconds=0;
 var inner=document.getElementById("ping").innerHTML;
@@ -508,7 +521,5 @@ document.getElementById("ping").innerHTML=seconds+inner.substring(2);
     seconds = Math.floor((Math.random() * 20) + 1);
     },1000);
 </script>
-<script>
-modified version of https://github.com/GreatCorn/scom
-</script>
+
 </html>
